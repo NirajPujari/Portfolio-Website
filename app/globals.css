@@ -2,21 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Lexend;
+  src: url(./assets/fonts/Lexend.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Avanir;
+  src: url(./assets/fonts/AvenirBlack.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Cabin;
+  src: url(./assets/fonts/Cabin.ttf);
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --black-fifty: #000000;
+  --white-fifty: #FFFFFF;
+  --light-blue-twentyfive: #78C0E0;
+  --dark-blue-twenty-five: #223580;
 }
 
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--white-fifty);
+  background: var(--black-fifty);
 }
+
 
 @layer utilities {
   .text-balance {
